@@ -35,14 +35,14 @@ import imgSigninCover from "@/assets/img/signin-cover.png";
                 route="about"
               />
             </div>
-            <div class="col-md-6 mt-md-0 mt-5">
+            <!-- <div class="col-md-6 mt-md-0 mt-5">
               <ExampleCard
                 class="shadow-lg"
                 title="Contact Us Page"
                 image="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/pages/contact.jpg"
                 route="contactus"
               />
-            </div>
+            </div> -->
           </div>
           <div class="row mt-4">
             <div class="col-md-6 mt-md-0 mt-5">
@@ -53,14 +53,7 @@ import imgSigninCover from "@/assets/img/signin-cover.png";
                 route="signin-basic"
               />
             </div>
-            <div class="col-md-6 mt-md-0 mt-5">
-              <ExampleCard
-                classes="shadow-lg"
-                title="Author Page"
-                image="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/material-design-system/presentation/pages/author.jpg"
-                route="author"
-              />
-            </div>
+            
           </div>
         </div>
         <div class="col-md-3 mx-auto mt-md-0 mt-3">

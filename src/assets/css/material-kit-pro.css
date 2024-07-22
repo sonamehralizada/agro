@@ -4313,6 +4313,7 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 992px) {
+
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4333,6 +4334,7 @@ textarea.form-control-lg {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
     flex-basis: auto;
+    flex-wrap: nowrap;
   }
   .navbar-expand-lg .navbar-toggler {
     display: none;
@@ -4357,6 +4359,11 @@ textarea.form-control-lg {
     flex-grow: 0;
     padding: 0;
     overflow-y: visible;
+    flex-wrap: nowrap;
+  }
+  .navbar-expand-lg{
+    flex-wrap: nowrap !important;
+
   }
 }
 @media (min-width: 1200px) {

@@ -8,39 +8,31 @@ defineProps({
     type: String,
     required: true,
   },
-  description: {
-    type: String,
-    required: true,
-  },
-  action: {
-    type: Object,
-    color: String,
-    route: String,
-    label: String,
-    default: () => ({
-      color: "bg-gradient-success",
-      label: "Find Out More",
-    }),
-  },
 });
 </script>
 <template>
-  <div class="card">
-    <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-      <a :href="action.route" class="d-block blur-shadow-image">
-        <img :src="image" :alt="title" class="img-fluid border-radius-lg" />
-      </a>
+  <div class="card_custom">
+    <div >
+        <img :src="image" :alt="title" class="img-fluid border-radius-lg mb-2" />
     </div>
-    <div class="card-body text-center">
-      <h5 class="font-weight-normal">
+    <div>
+      <h5 class="font-weight-bold">
         <a href="javascript:;">{{ title }}</a>
       </h5>
-      <p class="mb-0">
-        {{ description }}
-      </p>
-      <button type="button" class="btn btn-sm mb-0 mt-3" :class="action.color">
-        {{ action.label }}
-      </button>
     </div>
   </div>
 </template>
+<style>
+.card_custom{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 255px;
+}
+
+</style>

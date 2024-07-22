@@ -104,40 +104,16 @@ watch(
       "
     >
       <RouterLink
-        class="navbar-brand d-none d-md-block"
-        :class="[
-          (props.transparent && textDark.value) || !props.transparent
-            ? 'text-dark font-weight-bolder ms-sm-3'
-            : 'text-white font-weight-bolder ms-sm-3'
-        ]"
+        class="navbar-brand  d-md-block"
         :to="{ name: 'presentation' }"
         rel="tooltip"
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-      <div class=" mb-2 mt-2">
+      <span class=" mb-2 mt-2">
         <img class="w-15" src="@/assets/img/logos/logo.png" alt="logo" />
-      </div>
+      </span>
       </RouterLink>
-      <!-- <RouterLink
-        class="navbar-brand d-block d-md-none"
-        :class="
-          props.transparent || props.dark
-            ? 'text-white'
-            : 'font-weight-bolder ms-sm-3'
-        "
-        to="/"
-        rel="tooltip"
-        title="Designed and Coded by Creative Tim"
-        data-placement="bottom"
-      >
-        Material Design
-      </RouterLink>
-      <a
-        href="https://www.creative-tim.com/product/vue-material-kit-pro"
-        class="btn btn-sm bg-gradient-success mb-0 ms-auto d-lg-none d-block"
-        >Buy Now</a
-      > -->
       <button
         class="navbar-toggler shadow-none ms-2"
         type="button"
@@ -169,7 +145,13 @@ watch(
             >
           <span> Haqqımızda</span>
         </RouterLink>
-        <ul class="navbar-nav navbar-nav-hover ms-auto">
+        <RouterLink
+          :to="{ name: 'contactus' }"
+          class="dropdown-item border-radius-md"
+          >
+          <span>Contact</span>
+          </RouterLink>
+        <!-- <ul class="navbar-nav navbar-nav-hover ms-auto">
           <li class="nav-item dropdown dropdown-hover mx-2">
             <a
               role="button"
@@ -215,17 +197,12 @@ watch(
                       >
                         <span>About Us</span>
                       </RouterLink>
+                      
                       <RouterLink
                         :to="{ name: 'contactus' }"
                         class="dropdown-item border-radius-md"
                       >
-                        <span>Contact Us</span>
-                      </RouterLink>
-                      <RouterLink
-                        :to="{ name: 'author' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <span>Author</span>
+                        <span>Contact</span>
                       </RouterLink>
                       <div
                         class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
@@ -258,13 +235,7 @@ watch(
                   :to="{ name: 'contactus' }"
                   class="dropdown-item border-radius-md"
                 >
-                  <span>Contact Us</span>
-                </RouterLink>
-                <RouterLink
-                  :to="{ name: 'author' }"
-                  class="dropdown-item border-radius-md"
-                >
-                  <span>Author</span>
+                  <span>Contact</span>
                 </RouterLink>
                 <div
                   class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0 mt-3"
@@ -938,7 +909,7 @@ watch(
               Github
             </a>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
   </nav>

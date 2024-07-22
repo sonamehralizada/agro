@@ -123,16 +123,22 @@ defineProps({
 });
 </script>
 <template>
-  <footer class="footer pt-5 mt-5">
+  <footer class="footer  pt-5 mt-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 mb-4 ms-auto">
-          <div>
-            <a :href="brand.route">
-              <img :src="brand.logo" class="mb-3 footer-logo" alt="main_logo" />
-            </a>
-            <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
+          <RouterLink
+            class="navbar-brand d-none d-md-block"
+            :class="['text-dark font-weight-bolder ms-sm-3']"
+            :to="{ name: 'presentation' }"
+            rel="tooltip"
+            title="Designed and Coded by Creative Tim"
+            data-placement="bottom"
+          >
+          <div class="mb-2 mt-2">
+            <img class="w-15" src="@/assets/img/logos/logo.png" alt="logo" />
           </div>
+          </RouterLink>
           <div>
             <ul class="d-flex flex-row ms-n3 nav">
               <li

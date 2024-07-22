@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
-import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
-import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
+// import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
+import ContactView from "../views/LandingPages/Contact/ContactView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
@@ -36,15 +36,15 @@ const router = createRouter({
       name: "about",
       component: AboutView,
     },
+    // {
+    //   path: "/pages/landing-pages/contact-us",
+    //   name: "contactus",
+    //   component: ContactView,
+    // },
     {
       path: "/pages/landing-pages/contact-us",
       name: "contactus",
       component: ContactView,
-    },
-    {
-      path: "/pages/landing-pages/author",
-      name: "author",
-      component: AuthorView,
     },
     {
       path: "/pages/landing-pages/basic",
