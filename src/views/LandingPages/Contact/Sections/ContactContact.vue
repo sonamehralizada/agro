@@ -65,11 +65,6 @@ onMounted(() => {
                       <div>
                         <i class="fas fa-map-marker-alt text-sm"></i>
                       </div>
-                      <div class="ps-3">
-                        <span class="text-sm opacity-8"
-                          >Ünvan: Azərbaycan Respublikası, Əhməd Rəcəbli 33, Esra Plaza AZ 1075</span
-                        >
-                      </div>
                     </div>
                     <div class="mt-4">
                       <MaterialButton
