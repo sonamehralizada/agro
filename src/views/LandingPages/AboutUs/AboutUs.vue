@@ -1,7 +1,6 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
 
-import bgContact from "@/assets/img/examples/blog2.jpg";
 import about from "@/assets/img/blossom.jpg";
 
 
@@ -25,17 +24,12 @@ onUnmounted(() => {
             <div class="row">
               <div
                 class="col-lg-5 position-relative bg-cover px-0"
-                :style="{ backgroundImage: `url(${bgContact})` }"
+                :style="{ backgroundImage: `url(${about})` }"
                 loading="lazy"
               >
-                    <img
-                    class="max-width-50 h-10 w-100 position-relative z-index-2 border-radius-lg"
-                    :src="about"
-                    alt="image"
-                    />
+              
               </div>
               <div class="col-lg-7">
-                <form class="p-3" id="contact-form" method="post">
                   <div class="card-header px-4 py-sm-5 py-3">
                     <h2>Biz Kimik?</h2>
                   </div>
@@ -58,7 +52,6 @@ onUnmounted(() => {
                     </div>
             
                   </div>
-                </form>
               </div>
             </div>
           </div>

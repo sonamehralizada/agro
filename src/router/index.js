@@ -3,6 +3,8 @@ import PresentationView from "../views/Presentation/PresentationView.vue";
 import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 // import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import ContactView from "../views/LandingPages/Contact/ContactView.vue";
+import ProductsView from "../views/LandingPages/Products/ProductsView.vue";
+import ProjectsView from "../views/LandingPages/Projects/ProjectsView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
@@ -36,11 +38,16 @@ const router = createRouter({
       name: "about",
       component: AboutView,
     },
-    // {
-    //   path: "/pages/landing-pages/contact-us",
-    //   name: "contactus",
-    //   component: ContactView,
-    // },
+    {
+      path: "/pages/landing-pages/projects",
+      name: "projects",
+      component: ProjectsView,
+    },
+    {
+      path: "/pages/landing-pages/products",
+      name: "products",
+      component: ProductsView,
+    },
     {
       path: "/pages/landing-pages/contact-us",
       name: "contactus",
