@@ -146,13 +146,13 @@ watch(
           <span> Haqqımızda</span>
         </RouterLink>
         <RouterLink
-          :to="{ name: 'contactus' }"
+          :to="{ name: 'products' }"
           class="dropdown-item border-radius-md"
           >
           <span>Məhsullar</span>
           </RouterLink>
           <RouterLink
-          :to="{ name: 'contactus' }"
+          :to="{ name: 'projects' }"
           class="dropdown-item border-radius-md"
           >
           <span>Layihələr</span>
