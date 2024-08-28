@@ -8,6 +8,8 @@ import NavbarDefault from "../..//examples/navbars/NavbarDefault.vue";
 import ContactUsFooter from "../LandingPages/Contact/Sections/ContactFooter.vue";
 import CenteredBlogCard from "../..//examples/cards/blogCards/CenteredBlogCard.vue";
 import AboutUs from "../LandingPages/AboutUs/AboutUs.vue";
+import Products from "../LandingPages/Products/Products.vue";
+
 
 
 import icon1 from '@/assets/img/logos/icon1.png';
@@ -67,7 +69,7 @@ onUnmounted(() => {
     <span class="mask bg-gradient-dark opacity-6"></span>
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 text-center mx-auto position-relative">
+          <div class="col-lg-7 mt-4 text-center mx-auto position-relative">
             <h1 class="text-white">
               “Kronos Agro” Məhdud Məsuliyyətli Cəmiyyəti <span class="text-white" id="typed"></span>
             </h1>
@@ -103,6 +105,11 @@ onUnmounted(() => {
   <section class="mb-4">
     <div class="container">
       <AboutUs/>
+    </div>
+  </section>
+  <section class="mb-4">
+    <div class="container">
+      <Products/>
     </div>
   </section>
   
