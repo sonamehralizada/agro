@@ -1,7 +1,7 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
 
-import about from "@/assets/img/blossom.jpg";
+import about from "@/assets/img/aboutbg1.jpg";
 
 
 const body = document.getElementsByTagName("body")[0];

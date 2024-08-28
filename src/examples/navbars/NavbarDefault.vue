@@ -103,6 +103,7 @@ watch(
           : 'container-fluid px-2'
       "
     >
+    <div class="navbar-container">
       <RouterLink
         class="navbar-brand  d-md-block ml-2"
         :to="{ name: 'presentation' }"
@@ -129,8 +130,10 @@ watch(
           <span class="navbar-toggler-bar bar3"></span>
         </span>
       </button>
+    </div>
+
       <div
-        class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 mx-2"
+        class="collapse navbar-collapse gap-2 w-100 pt-3 pb-2 py-lg-0 mx-2"
         id="navigation"
       >
         <RouterLink
@@ -158,7 +161,7 @@ watch(
           <span>Layihələr</span>
           </RouterLink>
           <RouterLink
-          :to="{ name: 'contactus' }"
+          :to="{ name: 'gallery' }"
           class="dropdown-item border-radius-md"
           >
           <span> 
@@ -174,3 +177,13 @@ watch(
   </nav>
   <!-- End Navbar -->
 </template>
+<style>
+
+.navbar-container{
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+.logo_style{
+  width: 60px;
+}
+</style>

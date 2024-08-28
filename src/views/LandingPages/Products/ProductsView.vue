@@ -1,34 +1,13 @@
 <script setup>
-import { ref } from 'vue';
-import VueEasyLightbox from 'vue-easy-lightbox'
+
 
 import DefaultNavbar from "../../../examples/navbars/NavbarDefault.vue";
 import Header from "../../../examples/Header.vue";
 import Footer from "../Contact/Sections/ContactFooter.vue";
+import Products from "../Products/Products.vue";
+
 
 import image from "@/assets/img/landscape.jpg";
-import product1 from '@/assets/img/nektarin.jpg';
-import product2 from '@/assets/img/plum2.jpg';
-import product3 from '@/assets/img/peach3.jpg';
-
-const products = [
-  { id: 1, title: 'Nektarin', img: product1 ,season:'İyun ayının ortası'},
-  { id: 2, title: 'Gavalı', img: product2 ,season:'İyul ayının ortası'},
-  { id: 3, title: 'Şaftalı', img: product3 ,season:'İyun ayının ortası'},
-];
-// Mapping to lightbox format
-const images = products.map(product => ({
-  src: product.img,
-  title: product.title
-}));
-
-const visible = ref(false);
-const index = ref(0);
-
-const showLightbox = (idx) => {
-  index.value = idx;
-  visible.value = true;
-};
 
 </script>
 
@@ -51,27 +30,8 @@ const showLightbox = (idx) => {
             <span class="mask bg-gradient-dark opacity-8"></span>
             </div>
         </Header>
-    
-    <div class="container mt-5 mb-8">
-      <div class="row">
-        <div v-for="(product, idx) in products" :key="product.id" @click="showLightbox(idx)" class="col-lg-4 col-md-4 col-sm-6 mb-4 cursor-pointer">
-          <div class="product-card">
-            <div class="product-image" :style="{ backgroundImage: `url(${product.img})` }"></div>
-            
-            <div class="product-info text-center p-3">
-              <h5>{{ product.title }}</h5>
-              <p>Məhsul dövrü:{{ product.season }}</p>
-            </div>
-          </div>
-        </div>
-        <VueEasyLightbox
-                :visible="visible"
-                :imgs="products.map(product => product.img)"
-                :index="index"
-                @hide="visible = false"
-            />
-      </div>
-    </div>
+    <Products/>
+
     <Footer />
   </div>
 </template>
@@ -96,9 +56,6 @@ const showLightbox = (idx) => {
   background-position: center;
 }
 
-.project_container {
-  min-height: 100vh;
-}
 
 .projects_footer {
   position: relative; 

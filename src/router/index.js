@@ -5,6 +5,7 @@ import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/Contact/ContactView.vue";
 import ProductsView from "../views/LandingPages/Products/ProductsView.vue";
 import ProjectsView from "../views/LandingPages/Projects/ProjectsView.vue";
+import Gallery from "../views/LandingPages/Gallery/Gallery.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
@@ -42,6 +43,11 @@ const router = createRouter({
       path: "/pages/landing-pages/projects",
       name: "projects",
       component: ProjectsView,
+    },
+    {
+      path: "/pages/landing-pages/gallery",
+      name: "gallery",
+      component: Gallery,
     },
     {
       path: "/pages/landing-pages/products",
